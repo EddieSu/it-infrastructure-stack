@@ -1,0 +1,41 @@
+title: Self-Hosted Enterprise IT Infrastructure
+description: >-
+  A technology-selection showcase of a one-person-operated enterprise IT stack.
+  自架企業 IT 基礎架構技術選型展示。
+# Pinned to a release compatible with GitHub Pages' native (Jekyll 3.10) build.
+remote_theme: just-the-docs/just-the-docs@v0.6.2
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+# ---- just-the-docs settings ----
+color_scheme: dark
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  rel_url: true
+heading_anchors: true
+
+# Mermaid diagrams (rendered client-side by just-the-docs)
+mermaid:
+  version: "11.4.1"
+
+aux_links:
+  GitHub:
+    - "https://github.com/EddieSu/it-infrastructure-stack"
+aux_links_new_tab: true
+
+footer_content: >-
+  Built &amp; operated by <strong>Eddie Su</strong>. Technology showcase only —
+  no internal addresses, hostnames, or product branding.
+
+# Don't process build/tooling files as content
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .gitignore
